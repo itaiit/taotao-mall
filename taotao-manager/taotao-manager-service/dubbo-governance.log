@@ -1,0 +1,126 @@
+2019-11-18 17:04:57,985 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader (ContextLoader.java:307) - Root WebApplicationContext: initialization started
+2019-11-18 17:04:58,157 [localhost-startStop-1] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing Root WebApplicationContext: startup date [Mon Nov 18 17:04:58 CST 2019]; root of context hierarchy
+2019-11-18 17:04:58,253 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [D:\learn\project-in-action\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-dao.xml]
+2019-11-18 17:04:58,614 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [D:\learn\project-in-action\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-service.xml]
+2019-11-18 17:05:01,364 [localhost-startStop-1] INFO  ? (?:?) - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2019-11-18 17:05:01,408 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [D:\learn\project-in-action\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-transaction.xml]
+2019-11-18 17:05:02,097 [localhost-startStop-1] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [properties/mysql-connector.properties]
+2019-11-18 17:05:02,108 [localhost-startStop-1] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor (AutowiredAnnotationBeanPostProcessor.java:153) - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-11-18 17:05:03,450 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: io.itaiit.service.TestMapperService, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-18 17:05:03,612 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service io.itaiit.service.TestMapperService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-18 17:05:03,613 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service io.itaiit.service.TestMapperService to url dubbo://192.168.61.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=23928&side=provider&timestamp=1574067903496, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-18 17:05:03,614 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:481) -  [DUBBO] Register dubbo service io.itaiit.service.TestMapperService url dubbo://192.168.61.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=23928&side=provider&timestamp=1574067903496 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager-service&dubbo=2.5.3&pid=23928&registry=zookeeper&timestamp=1574067903464, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-18 17:05:03,915 [localhost-startStop-1] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.61.1:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-18 17:05:03,951 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:232) -  [DUBBO] Load registry store file C:\Users\22640\.dubbo\dubbo-registry-127.0.0.1.cache, data: {io.itaiit.service.TestMapperService=empty://192.168.61.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=28636&side=provider&timestamp=1574067590608}, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-18 17:05:03,998 [ZkClient-EventThread-28-127.0.0.1:2181] INFO  org.I0Itec.zkclient.ZkEventThread (ZkEventThread.java:64) - Starting ZkClient event thread.
+2019-11-18 17:05:04,065 [localhost-startStop-1-EventThread] INFO  org.I0Itec.zkclient.ZkClient (ZkClient.java:449) - zookeeper state changed (SyncConnected)
+2019-11-18 17:05:04,067 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:302) -  [DUBBO] Register: dubbo://192.168.61.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=23928&side=provider&timestamp=1574067903496, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-18 17:05:04,107 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:325) -  [DUBBO] Subscribe: provider://192.168.61.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=23928&side=provider&timestamp=1574067903496, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-18 17:05:04,156 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:422) -  [DUBBO] Notify urls for subscribe url provider://192.168.61.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=23928&side=provider&timestamp=1574067903496, urls: [empty://192.168.61.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=23928&side=provider&timestamp=1574067903496], dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-18 17:05:04,202 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader (ContextLoader.java:347) - Root WebApplicationContext: initialization completed in 6212 ms
+2019-11-18 17:06:26,272 [DubboServerHandler-192.168.61.1:20880-thread-2] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:655) - {dataSource-1} inited
+2019-11-18 17:06:47,444 [Druid-ConnectionPool-Create-722387336] ERROR com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread (DruidDataSource.java:1846) - create connection error
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1137)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:355)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2490)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2527)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2309)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:834)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:408)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:419)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:244)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:258)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:305)
+	... 15 more
+2019-11-18 17:07:08,462 [Druid-ConnectionPool-Create-722387336] ERROR com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread (DruidDataSource.java:1846) - create connection error
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1137)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:355)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2490)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2527)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2309)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:834)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:408)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:419)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1375)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:244)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:258)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:305)
+	... 15 more
+2019-11-18 17:07:17,331 [New I/O worker #1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /192.168.61.1:20880. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-18 17:07:17,334 [DubboServerHandler-192.168.61.1:20880-thread-6] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /192.168.61.1:59168,url:dubbo://192.168.61.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=23928&side=provider&timestamp=1574067903496, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-18 17:11:49,402 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader (ContextLoader.java:307) - Root WebApplicationContext: initialization started
+2019-11-18 17:11:49,630 [localhost-startStop-1] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing Root WebApplicationContext: startup date [Mon Nov 18 17:11:49 CST 2019]; root of context hierarchy
+2019-11-18 17:11:49,809 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [D:\learn\project-in-action\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-dao.xml]
+2019-11-18 17:11:50,726 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [D:\learn\project-in-action\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-service.xml]
+2019-11-18 17:11:54,964 [localhost-startStop-1] INFO  ? (?:?) - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2019-11-18 17:11:55,041 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [D:\learn\project-in-action\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-transaction.xml]
+2019-11-18 17:11:56,444 [localhost-startStop-1] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [properties/mysql-connector.properties]
+2019-11-18 17:11:56,457 [localhost-startStop-1] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor (AutowiredAnnotationBeanPostProcessor.java:153) - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-11-18 17:11:59,063 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: io.itaiit.service.TestMapperService, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-18 17:11:59,275 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service io.itaiit.service.TestMapperService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-18 17:11:59,276 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service io.itaiit.service.TestMapperService to url dubbo://192.168.61.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=21744&side=provider&timestamp=1574068319108, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-18 17:11:59,277 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:481) -  [DUBBO] Register dubbo service io.itaiit.service.TestMapperService url dubbo://192.168.61.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=21744&side=provider&timestamp=1574068319108 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager-service&dubbo=2.5.3&pid=21744&registry=zookeeper&timestamp=1574068319073, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-18 17:11:59,643 [localhost-startStop-1] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.61.1:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-18 17:11:59,740 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:232) -  [DUBBO] Load registry store file C:\Users\22640\.dubbo\dubbo-registry-127.0.0.1.cache, data: {io.itaiit.service.TestMapperService=empty://192.168.61.1/io.itaiit.service.TestMapperService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=27352&side=consumer&timestamp=1574066433588 empty://192.168.61.1/io.itaiit.service.TestMapperService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=27352&side=consumer&timestamp=1574066433588 dubbo://192.168.61.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=23928&side=provider&timestamp=1574067903496}, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-18 17:11:59,771 [ZkClient-EventThread-28-127.0.0.1:2181] INFO  org.I0Itec.zkclient.ZkEventThread (ZkEventThread.java:64) - Starting ZkClient event thread.
+2019-11-18 17:11:59,864 [localhost-startStop-1-EventThread] INFO  org.I0Itec.zkclient.ZkClient (ZkClient.java:449) - zookeeper state changed (SyncConnected)
+2019-11-18 17:11:59,867 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:302) -  [DUBBO] Register: dubbo://192.168.61.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=21744&side=provider&timestamp=1574068319108, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-18 17:11:59,979 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:325) -  [DUBBO] Subscribe: provider://192.168.61.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=21744&side=provider&timestamp=1574068319108, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-18 17:12:00,068 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:422) -  [DUBBO] Notify urls for subscribe url provider://192.168.61.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=21744&side=provider&timestamp=1574068319108, urls: [empty://192.168.61.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=21744&side=provider&timestamp=1574068319108], dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-18 17:12:00,112 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader (ContextLoader.java:347) - Root WebApplicationContext: initialization completed in 10690 ms
+2019-11-18 17:12:14,027 [DubboServerHandler-192.168.61.1:20880-thread-2] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:655) - {dataSource-1} inited
