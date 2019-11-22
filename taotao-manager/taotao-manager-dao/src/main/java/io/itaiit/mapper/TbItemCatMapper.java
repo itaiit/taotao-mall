@@ -1,6 +1,7 @@
 package io.itaiit.mapper;
 
 import io.itaiit.pojo.TbItemCat;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -20,4 +21,7 @@ public interface TbItemCatMapper {
      * @mbg.generated Tue Nov 19 20:33:25 CST 2019
      */
     List<TbItemCat> selectAll();
+
+    List<TbItemCat> selectById(@Param("parentId") long parentId);
+
 }

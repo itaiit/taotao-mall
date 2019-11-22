@@ -11,6 +11,7 @@
        https://www.springframework.org/schema/mvc/spring-mvc.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <context:component-scan base-package="io.itaiit.controller"/>
+    <context:property-placeholder location="classpath:resource/resource.properties"/>
 
     <mvc:annotation-driven/>
 
@@ -19,7 +20,13 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-<!--    配置静态资源映射-->
+    <!--    添加文件上传的配置-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="defaultEncoding" value="utf-8"/>
+        <property name="maxUploadSize" value="5242880"/> <!--最大上传大小为5MB-->
+    </bean>
+
+    <!--    配置静态资源映射-->
     <mvc:resources mapping="/js/**" location="/WEB-INF/js/"/>
     <mvc:resources mapping="/css/**" location="/WEB-INF/css/"/>
 
@@ -30,5 +37,6 @@
     <!--引用dubbo服务，此处的id为接口名称首字母小写-->
     <dubbo:reference interface="io.itaiit.service.TestMapperService" id="testMapperService"/>
     <dubbo:reference interface="io.itaiit.service.ItemService" id="itemService"/>
+    <dubbo:reference interface="io.itaiit.service.ItemCatService" id="itemCatService"/>
 
 </beans>

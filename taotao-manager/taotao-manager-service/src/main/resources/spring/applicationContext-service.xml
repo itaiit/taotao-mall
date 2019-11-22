@@ -16,5 +16,6 @@
     <!--暴露接口，这里是引用注解的service，不知道可行不可行-->
     <dubbo:service interface="io.itaiit.service.TestMapperService" ref="testMapperServiceImpl"/>
     <dubbo:service interface="io.itaiit.service.ItemService" ref="itemServiceImpl"/>
+    <dubbo:service interface="io.itaiit.service.ItemCatService" ref="itemCatServiceImpl"/>
 
 </beans>
