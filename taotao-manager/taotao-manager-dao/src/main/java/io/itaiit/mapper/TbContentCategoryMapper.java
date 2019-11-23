@@ -1,6 +1,7 @@
 package io.itaiit.mapper;
 
 import io.itaiit.pojo.TbContentCategory;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -20,4 +21,12 @@ public interface TbContentCategoryMapper {
      * @mbg.generated Tue Nov 19 20:33:25 CST 2019
      */
     List<TbContentCategory> selectAll();
+
+    List<TbContentCategory> getContentCategoryList(@Param("parentId") Long parentId);
+
+    void insertContentCategory(TbContentCategory category);
+
+    TbContentCategory selectById(@Param("id") Long id);
+
+    void updateById(TbContentCategory category);
 }

@@ -6,16 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="taotao-manager-dao" />
         <module name="taotao-manager-web" />
+        <module name="taotao-content-interface" />
+        <module name="taotao-portal-web" />
         <module name="taotao-common" />
         <module name="taotao-manager-interface" />
         <module name="taotao-manager-pojo" />
-        <module name="taotao-manager-dao" />
+        <module name="taotao-content-service" />
         <module name="taotao-manager-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="taotao-common" target="1.8" />
+      <module name="taotao-content" target="1.8" />
+      <module name="taotao-content-dao" target="1.8" />
+      <module name="taotao-content-interface" target="1.8" />
+      <module name="taotao-content-service" target="1.8" />
       <module name="taotao-manager" target="1.8" />
       <module name="taotao-manager (1) (io.itaiit)" target="1.5" />
       <module name="taotao-manager-dao" target="1.8" />
@@ -28,6 +35,7 @@
       <module name="taotao-manager-service (1) (io.itaiit)" target="1.5" />
       <module name="taotao-manager-web" target="1.8" />
       <module name="taotao-parent" target="1.8" />
+      <module name="taotao-portal-web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

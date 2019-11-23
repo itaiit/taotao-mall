@@ -54,7 +54,7 @@ function menuHandler(item){
                 parentId : node.id
             }]
         }); 
-		var _node = tree.tree('find',0);//根节点
+		var _node = tree.tree('find',0);
 		tree.tree("select",_node.target).tree('beginEdit',_node.target);
 	}else if(item.name === "rename"){
 		tree.tree('beginEdit',node.target);
