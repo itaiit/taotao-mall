@@ -1,6 +1,8 @@
 package io.itaiit.controller;
 
 import io.itaiit.common.pojo.EasyUIDataGridResult;
+import io.itaiit.common.pojo.TaotaoResult;
+import io.itaiit.pojo.TbItem;
 import io.itaiit.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -22,5 +24,13 @@ public class ItemController {
 
         EasyUIDataGridResult result = itemService.getItemList(page, rows);
         return result;
+    }
+
+    @RequestMapping("/item/save")
+    @ResponseBody
+    public TaotaoResult saveItem(TbItem item, String desc){
+        System.out.println("item.getPrice() = " + item.getPrice());
+        TaotaoResult taotaoResult = itemService.saveItem(item, desc);
+        return taotaoResult;
     }
 }

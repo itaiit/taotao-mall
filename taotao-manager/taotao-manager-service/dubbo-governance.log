@@ -5650,3 +5650,403 @@ java.io.IOException: Can not lock the registry cache file C:\Users\22640\.dubbo\
 	at java.lang.Thread.run(Thread.java:748)
 2019-11-22 12:42:15,721 [New I/O worker #1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:197) -  [DUBBO] All clients has discontected from /192.168.56.1:20880. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
 2019-11-22 12:42:15,724 [DubboServerHandler-192.168.56.1:20880-thread-3] INFO  alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1 (DubboProtocol.java:130) -  [DUBBO] disconected from /192.168.56.1:63027,url:dubbo://192.168.56.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=36428&side=provider&timestamp=1574397495358, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:03:02,889 [main] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1e67b872: startup date [Sat Nov 23 09:03:02 CST 2019]; root of context hierarchy
+2019-11-23 09:03:02,963 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [spring/applicationContext-dao.xml]
+2019-11-23 09:03:03,415 [main] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [properties/mysql-connector.properties]
+2019-11-23 09:03:04,311 [main] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:655) - {dataSource-1} inited
+2019-11-23 09:04:15,038 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader (ContextLoader.java:307) - Root WebApplicationContext: initialization started
+2019-11-23 09:04:15,308 [localhost-startStop-1] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing Root WebApplicationContext: startup date [Sat Nov 23 09:04:15 CST 2019]; root of context hierarchy
+2019-11-23 09:04:15,438 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [D:\learn\project-in-action\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-dao.xml]
+2019-11-23 09:04:15,825 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [D:\learn\project-in-action\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-service.xml]
+2019-11-23 09:04:18,648 [localhost-startStop-1] INFO  ? (?:?) - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2019-11-23 09:04:18,753 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [D:\learn\project-in-action\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-transaction.xml]
+2019-11-23 09:04:20,423 [localhost-startStop-1] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [properties/mysql-connector.properties]
+2019-11-23 09:04:20,447 [localhost-startStop-1] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor (AutowiredAnnotationBeanPostProcessor.java:153) - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-11-23 09:04:24,999 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: io.itaiit.service.TestMapperService, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:04:25,833 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service io.itaiit.service.TestMapperService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:04:25,833 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service io.itaiit.service.TestMapperService to url dubbo://192.168.56.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=58480&side=provider&timestamp=1574471065119, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:04:25,833 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:481) -  [DUBBO] Register dubbo service io.itaiit.service.TestMapperService url dubbo://192.168.56.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=58480&side=provider&timestamp=1574471065119 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager-service&dubbo=2.5.3&pid=58480&registry=zookeeper&timestamp=1574471065027, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:04:26,477 [localhost-startStop-1] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.56.1:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:04:26,507 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:232) -  [DUBBO] Load registry store file C:\Users\22640\.dubbo\dubbo-registry-127.0.0.1.cache, data: {io.itaiit.service.TestMapperService=empty://192.168.56.1/io.itaiit.service.TestMapperService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=41808&side=consumer&timestamp=1574397753152 empty://192.168.56.1/io.itaiit.service.TestMapperService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=41808&side=consumer&timestamp=1574397753152 dubbo://192.168.56.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=36428&side=provider&timestamp=1574397495358, io.itaiit.service.ItemService=empty://192.168.56.1/io.itaiit.service.ItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=getItemList&pid=41808&side=consumer&timestamp=1574397753069 empty://192.168.56.1/io.itaiit.service.ItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=getItemList&pid=41808&side=consumer&timestamp=1574397753069 dubbo://192.168.56.1:20880/io.itaiit.service.ItemService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=getItemList&pid=36428&side=provider&timestamp=1574397495885, io.itaiit.service.ItemCatService=empty://192.168.56.1/io.itaiit.service.ItemCatService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=41808&side=consumer&timestamp=1574397752516 empty://192.168.56.1/io.itaiit.service.ItemCatService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=41808&side=consumer&timestamp=1574397752516 dubbo://192.168.56.1:20880/io.itaiit.service.ItemCatService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=36428&side=provider&timestamp=1574397495924}, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:04:27,148 [ZkClient-EventThread-28-127.0.0.1:2181] INFO  org.I0Itec.zkclient.ZkEventThread (ZkEventThread.java:64) - Starting ZkClient event thread.
+2019-11-23 09:04:27,481 [localhost-startStop-1-EventThread] INFO  org.I0Itec.zkclient.ZkClient (ZkClient.java:449) - zookeeper state changed (SyncConnected)
+2019-11-23 09:04:27,485 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:302) -  [DUBBO] Register: dubbo://192.168.56.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=58480&side=provider&timestamp=1574471065119, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:04:27,758 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:325) -  [DUBBO] Subscribe: provider://192.168.56.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=58480&side=provider&timestamp=1574471065119, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:04:29,464 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:422) -  [DUBBO] Notify urls for subscribe url provider://192.168.56.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=58480&side=provider&timestamp=1574471065119, urls: [empty://192.168.56.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=58480&side=provider&timestamp=1574471065119], dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:04:29,675 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: io.itaiit.service.ItemService, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:04:29,687 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service io.itaiit.service.ItemService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:04:29,687 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service io.itaiit.service.ItemService to url dubbo://192.168.56.1:20880/io.itaiit.service.ItemService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=saveItem,getItemList&pid=58480&side=provider&timestamp=1574471069678, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:04:29,688 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:481) -  [DUBBO] Register dubbo service io.itaiit.service.ItemService url dubbo://192.168.56.1:20880/io.itaiit.service.ItemService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=saveItem,getItemList&pid=58480&side=provider&timestamp=1574471069678 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager-service&dubbo=2.5.3&pid=58480&registry=zookeeper&timestamp=1574471069678, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:04:29,689 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:302) -  [DUBBO] Register: dubbo://192.168.56.1:20880/io.itaiit.service.ItemService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=saveItem,getItemList&pid=58480&side=provider&timestamp=1574471069678, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:04:29,859 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:325) -  [DUBBO] Subscribe: provider://192.168.56.1:20880/io.itaiit.service.ItemService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=saveItem,getItemList&pid=58480&side=provider&timestamp=1574471069678, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:04:29,889 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:422) -  [DUBBO] Notify urls for subscribe url provider://192.168.56.1:20880/io.itaiit.service.ItemService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=saveItem,getItemList&pid=58480&side=provider&timestamp=1574471069678, urls: [empty://192.168.56.1:20880/io.itaiit.service.ItemService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=saveItem,getItemList&pid=58480&side=provider&timestamp=1574471069678], dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:04:29,890 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: io.itaiit.service.ItemCatService, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:04:29,900 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service io.itaiit.service.ItemCatService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:04:29,900 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service io.itaiit.service.ItemCatService to url dubbo://192.168.56.1:20880/io.itaiit.service.ItemCatService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=58480&side=provider&timestamp=1574471069894, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:04:29,901 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:481) -  [DUBBO] Register dubbo service io.itaiit.service.ItemCatService url dubbo://192.168.56.1:20880/io.itaiit.service.ItemCatService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=58480&side=provider&timestamp=1574471069894 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager-service&dubbo=2.5.3&pid=58480&registry=zookeeper&timestamp=1574471069894, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:04:29,902 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:302) -  [DUBBO] Register: dubbo://192.168.56.1:20880/io.itaiit.service.ItemCatService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=58480&side=provider&timestamp=1574471069894, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:04:29,982 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:325) -  [DUBBO] Subscribe: provider://192.168.56.1:20880/io.itaiit.service.ItemCatService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=58480&side=provider&timestamp=1574471069894, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:04:29,996 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:422) -  [DUBBO] Notify urls for subscribe url provider://192.168.56.1:20880/io.itaiit.service.ItemCatService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=58480&side=provider&timestamp=1574471069894, urls: [empty://192.168.56.1:20880/io.itaiit.service.ItemCatService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=58480&side=provider&timestamp=1574471069894], dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:04:30,001 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader (ContextLoader.java:347) - Root WebApplicationContext: initialization completed in 14960 ms
+2019-11-23 09:05:22,742 [DubboServerHandler-192.168.56.1:20880-thread-2] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:655) - {dataSource-1} inited
+2019-11-23 09:05:56,995 [DubboServerHandler-192.168.56.1:20880-thread-5] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-11-23 09:05:57,023 [DubboServerHandler-192.168.56.1:20880-thread-5] INFO  org.springframework.jdbc.support.SQLErrorCodesFactory (SQLErrorCodesFactory.java:126) - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2019-11-23 09:05:57,037 [DubboServerHandler-192.168.56.1:20880-thread-5] ERROR com.alibaba.dubbo.rpc.filter.ExceptionFilter (ExceptionFilter.java:87) -  [DUBBO] Got unchecked and undeclared exception which called by 192.168.56.1. service: io.itaiit.service.ItemService, method: saveItem, exception: org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'status' cannot be null
+### The error may involve io.itaiit.mapper.TbItemMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into tb_item (id, title, sell_point,        price, num, barcode,        image, cid, status,        created, updated)     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?,        ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'status' cannot be null
+; SQL []; Column 'status' cannot be null; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'status' cannot be null, dubbo version: 2.5.3, current host: 127.0.0.1
+org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'status' cannot be null
+### The error may involve io.itaiit.mapper.TbItemMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into tb_item (id, title, sell_point,        price, num, barcode,        image, cid, status,        created, updated)     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?,        ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'status' cannot be null
+; SQL []; Column 'status' cannot be null; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'status' cannot be null
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:85)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:371)
+	at com.sun.proxy.$Proxy32.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:240)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:51)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:52)
+	at com.sun.proxy.$Proxy37.insert(Unknown Source)
+	at io.itaiit.service.impl.ItemServiceImpl.saveItem(ItemServiceImpl.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy39.saveItem(Unknown Source)
+	at com.alibaba.dubbo.common.bytecode.Wrapper1.invokeMethod(Wrapper1.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'status' cannot be null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:408)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1049)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4208)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4140)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2597)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2758)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2826)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2082)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1302)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:493)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:44)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:69)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:48)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:105)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at com.sun.proxy.$Proxy48.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:152)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	... 49 more
+2019-11-23 09:07:41,745 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader (ContextLoader.java:307) - Root WebApplicationContext: initialization started
+2019-11-23 09:07:41,928 [localhost-startStop-1] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing Root WebApplicationContext: startup date [Sat Nov 23 09:07:41 CST 2019]; root of context hierarchy
+2019-11-23 09:07:42,001 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [D:\learn\project-in-action\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-dao.xml]
+2019-11-23 09:07:42,322 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [D:\learn\project-in-action\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-service.xml]
+2019-11-23 09:07:44,943 [localhost-startStop-1] INFO  ? (?:?) - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2019-11-23 09:07:44,992 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [D:\learn\project-in-action\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-transaction.xml]
+2019-11-23 09:07:45,572 [localhost-startStop-1] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [properties/mysql-connector.properties]
+2019-11-23 09:07:45,589 [localhost-startStop-1] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor (AutowiredAnnotationBeanPostProcessor.java:153) - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-11-23 09:07:47,321 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: io.itaiit.service.TestMapperService, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:07:47,648 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service io.itaiit.service.TestMapperService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:07:47,648 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service io.itaiit.service.TestMapperService to url dubbo://192.168.56.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=60140&side=provider&timestamp=1574471267385, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:07:47,649 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:481) -  [DUBBO] Register dubbo service io.itaiit.service.TestMapperService url dubbo://192.168.56.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=60140&side=provider&timestamp=1574471267385 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager-service&dubbo=2.5.3&pid=60140&registry=zookeeper&timestamp=1574471267334, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:07:47,939 [localhost-startStop-1] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.56.1:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:07:47,969 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:232) -  [DUBBO] Load registry store file C:\Users\22640\.dubbo\dubbo-registry-127.0.0.1.cache, data: {io.itaiit.service.TestMapperService=empty://192.168.56.1/io.itaiit.service.TestMapperService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=59192&side=consumer&timestamp=1574471077884 empty://192.168.56.1/io.itaiit.service.TestMapperService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=59192&side=consumer&timestamp=1574471077884 dubbo://192.168.56.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=58480&side=provider&timestamp=1574471065119, io.itaiit.service.ItemService=empty://192.168.56.1/io.itaiit.service.ItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=getItemList,saveItem&pid=59192&side=consumer&timestamp=1574471077696 empty://192.168.56.1/io.itaiit.service.ItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=getItemList,saveItem&pid=59192&side=consumer&timestamp=1574471077696 dubbo://192.168.56.1:20880/io.itaiit.service.ItemService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=saveItem,getItemList&pid=58480&side=provider&timestamp=1574471069678, io.itaiit.service.ItemCatService=empty://192.168.56.1/io.itaiit.service.ItemCatService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=59192&side=consumer&timestamp=1574471076924 empty://192.168.56.1/io.itaiit.service.ItemCatService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=59192&side=consumer&timestamp=1574471076924 dubbo://192.168.56.1:20880/io.itaiit.service.ItemCatService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=58480&side=provider&timestamp=1574471069894}, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:07:47,998 [ZkClient-EventThread-28-127.0.0.1:2181] INFO  org.I0Itec.zkclient.ZkEventThread (ZkEventThread.java:64) - Starting ZkClient event thread.
+2019-11-23 09:07:48,066 [localhost-startStop-1-EventThread] INFO  org.I0Itec.zkclient.ZkClient (ZkClient.java:449) - zookeeper state changed (SyncConnected)
+2019-11-23 09:07:48,068 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:302) -  [DUBBO] Register: dubbo://192.168.56.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=60140&side=provider&timestamp=1574471267385, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:07:48,096 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:325) -  [DUBBO] Subscribe: provider://192.168.56.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=60140&side=provider&timestamp=1574471267385, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:07:48,122 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:422) -  [DUBBO] Notify urls for subscribe url provider://192.168.56.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=60140&side=provider&timestamp=1574471267385, urls: [empty://192.168.56.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=60140&side=provider&timestamp=1574471267385], dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:07:48,164 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: io.itaiit.service.ItemService, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:07:48,188 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service io.itaiit.service.ItemService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:07:48,189 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service io.itaiit.service.ItemService to url dubbo://192.168.56.1:20880/io.itaiit.service.ItemService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=saveItem,getItemList&pid=60140&side=provider&timestamp=1574471268173, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:07:48,190 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:481) -  [DUBBO] Register dubbo service io.itaiit.service.ItemService url dubbo://192.168.56.1:20880/io.itaiit.service.ItemService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=saveItem,getItemList&pid=60140&side=provider&timestamp=1574471268173 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager-service&dubbo=2.5.3&pid=60140&registry=zookeeper&timestamp=1574471268172, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:07:48,192 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:302) -  [DUBBO] Register: dubbo://192.168.56.1:20880/io.itaiit.service.ItemService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=saveItem,getItemList&pid=60140&side=provider&timestamp=1574471268173, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:07:48,225 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:325) -  [DUBBO] Subscribe: provider://192.168.56.1:20880/io.itaiit.service.ItemService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=saveItem,getItemList&pid=60140&side=provider&timestamp=1574471268173, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:07:48,269 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:422) -  [DUBBO] Notify urls for subscribe url provider://192.168.56.1:20880/io.itaiit.service.ItemService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=saveItem,getItemList&pid=60140&side=provider&timestamp=1574471268173, urls: [empty://192.168.56.1:20880/io.itaiit.service.ItemService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=saveItem,getItemList&pid=60140&side=provider&timestamp=1574471268173], dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:07:48,273 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: io.itaiit.service.ItemCatService, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:07:48,289 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service io.itaiit.service.ItemCatService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:07:48,291 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service io.itaiit.service.ItemCatService to url dubbo://192.168.56.1:20880/io.itaiit.service.ItemCatService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=60140&side=provider&timestamp=1574471268285, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:07:48,291 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:481) -  [DUBBO] Register dubbo service io.itaiit.service.ItemCatService url dubbo://192.168.56.1:20880/io.itaiit.service.ItemCatService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=60140&side=provider&timestamp=1574471268285 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager-service&dubbo=2.5.3&pid=60140&registry=zookeeper&timestamp=1574471268284, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:07:48,294 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:302) -  [DUBBO] Register: dubbo://192.168.56.1:20880/io.itaiit.service.ItemCatService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=60140&side=provider&timestamp=1574471268285, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:07:48,320 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:325) -  [DUBBO] Subscribe: provider://192.168.56.1:20880/io.itaiit.service.ItemCatService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=60140&side=provider&timestamp=1574471268285, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:07:48,335 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:422) -  [DUBBO] Notify urls for subscribe url provider://192.168.56.1:20880/io.itaiit.service.ItemCatService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=60140&side=provider&timestamp=1574471268285, urls: [empty://192.168.56.1:20880/io.itaiit.service.ItemCatService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=60140&side=provider&timestamp=1574471268285], dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:07:48,339 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader (ContextLoader.java:347) - Root WebApplicationContext: initialization completed in 6586 ms
+2019-11-23 09:08:12,507 [DubboServerHandler-192.168.56.1:20880-thread-2] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:655) - {dataSource-1} inited
+2019-11-23 09:08:33,628 [DubboServerHandler-192.168.56.1:20880-thread-5] WARN  alibaba.dubbo.remoting.exchange.codec.ExchangeCodec (ExchangeCodec.java:296) -  [DUBBO] Fail to encode response: Response [id=7, version=2.0.0, status=20, event=false, error=null, result=RpcResult [result=io.itaiit.common.pojo.TaotaoResult@60d04c97, exception=null]], send bad_response info instead, cause: Serialized class io.itaiit.common.pojo.TaotaoResult must implement java.io.Serializable, dubbo version: 2.5.3, current host: 127.0.0.1
+java.lang.IllegalStateException: Serialized class io.itaiit.common.pojo.TaotaoResult must implement java.io.Serializable
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.getDefaultSerializer(SerializerFactory.java:261)
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.getSerializer(SerializerFactory.java:233)
+	at com.alibaba.com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:406)
+	at com.alibaba.dubbo.common.serialize.support.hessian.Hessian2ObjectOutput.writeObject(Hessian2ObjectOutput.java:92)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.encodeResponseData(DubboCodec.java:200)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.encodeResponse(ExchangeCodec.java:276)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.encode(ExchangeCodec.java:77)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.encode(DubboCountCodec.java:39)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalEncoder.encode(NettyCodecAdapter.java:81)
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.doEncode(OneToOneEncoder.java:66)
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.handleDownstream(OneToOneEncoder.java:59)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendDownstream(DefaultChannelPipeline.java:784)
+	at org.jboss.netty.channel.SimpleChannelHandler.writeRequested(SimpleChannelHandler.java:292)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyHandler.writeRequested(NettyHandler.java:99)
+	at org.jboss.netty.channel.SimpleChannelHandler.handleDownstream(SimpleChannelHandler.java:254)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:582)
+	at org.jboss.netty.channel.Channels.write(Channels.java:704)
+	at org.jboss.netty.channel.Channels.write(Channels.java:671)
+	at org.jboss.netty.channel.AbstractChannel.write(AbstractChannel.java:248)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyChannel.send(NettyChannel.java:98)
+	at com.alibaba.dubbo.remoting.transport.AbstractPeer.send(AbstractPeer.java:51)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:171)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-11-23 09:08:33,681 [DubboServerHandler-192.168.56.1:20880-thread-6] WARN  alibaba.dubbo.remoting.exchange.codec.ExchangeCodec (ExchangeCodec.java:296) -  [DUBBO] Fail to encode response: Response [id=8, version=2.0.0, status=20, event=false, error=null, result=RpcResult [result=io.itaiit.common.pojo.TaotaoResult@7dba15ac, exception=null]], send bad_response info instead, cause: Serialized class io.itaiit.common.pojo.TaotaoResult must implement java.io.Serializable, dubbo version: 2.5.3, current host: 127.0.0.1
+java.lang.IllegalStateException: Serialized class io.itaiit.common.pojo.TaotaoResult must implement java.io.Serializable
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.getDefaultSerializer(SerializerFactory.java:261)
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.getSerializer(SerializerFactory.java:233)
+	at com.alibaba.com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:406)
+	at com.alibaba.dubbo.common.serialize.support.hessian.Hessian2ObjectOutput.writeObject(Hessian2ObjectOutput.java:92)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.encodeResponseData(DubboCodec.java:200)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.encodeResponse(ExchangeCodec.java:276)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.encode(ExchangeCodec.java:77)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.encode(DubboCountCodec.java:39)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalEncoder.encode(NettyCodecAdapter.java:81)
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.doEncode(OneToOneEncoder.java:66)
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.handleDownstream(OneToOneEncoder.java:59)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendDownstream(DefaultChannelPipeline.java:784)
+	at org.jboss.netty.channel.SimpleChannelHandler.writeRequested(SimpleChannelHandler.java:292)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyHandler.writeRequested(NettyHandler.java:99)
+	at org.jboss.netty.channel.SimpleChannelHandler.handleDownstream(SimpleChannelHandler.java:254)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:582)
+	at org.jboss.netty.channel.Channels.write(Channels.java:704)
+	at org.jboss.netty.channel.Channels.write(Channels.java:671)
+	at org.jboss.netty.channel.AbstractChannel.write(AbstractChannel.java:248)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyChannel.send(NettyChannel.java:98)
+	at com.alibaba.dubbo.remoting.transport.AbstractPeer.send(AbstractPeer.java:51)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:171)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-11-23 09:08:33,706 [DubboServerHandler-192.168.56.1:20880-thread-7] WARN  alibaba.dubbo.remoting.exchange.codec.ExchangeCodec (ExchangeCodec.java:296) -  [DUBBO] Fail to encode response: Response [id=9, version=2.0.0, status=20, event=false, error=null, result=RpcResult [result=io.itaiit.common.pojo.TaotaoResult@7088b74f, exception=null]], send bad_response info instead, cause: Serialized class io.itaiit.common.pojo.TaotaoResult must implement java.io.Serializable, dubbo version: 2.5.3, current host: 127.0.0.1
+java.lang.IllegalStateException: Serialized class io.itaiit.common.pojo.TaotaoResult must implement java.io.Serializable
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.getDefaultSerializer(SerializerFactory.java:261)
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.getSerializer(SerializerFactory.java:233)
+	at com.alibaba.com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:406)
+	at com.alibaba.dubbo.common.serialize.support.hessian.Hessian2ObjectOutput.writeObject(Hessian2ObjectOutput.java:92)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.encodeResponseData(DubboCodec.java:200)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.encodeResponse(ExchangeCodec.java:276)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.encode(ExchangeCodec.java:77)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.encode(DubboCountCodec.java:39)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalEncoder.encode(NettyCodecAdapter.java:81)
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.doEncode(OneToOneEncoder.java:66)
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.handleDownstream(OneToOneEncoder.java:59)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendDownstream(DefaultChannelPipeline.java:784)
+	at org.jboss.netty.channel.SimpleChannelHandler.writeRequested(SimpleChannelHandler.java:292)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyHandler.writeRequested(NettyHandler.java:99)
+	at org.jboss.netty.channel.SimpleChannelHandler.handleDownstream(SimpleChannelHandler.java:254)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:582)
+	at org.jboss.netty.channel.Channels.write(Channels.java:704)
+	at org.jboss.netty.channel.Channels.write(Channels.java:671)
+	at org.jboss.netty.channel.AbstractChannel.write(AbstractChannel.java:248)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyChannel.send(NettyChannel.java:98)
+	at com.alibaba.dubbo.remoting.transport.AbstractPeer.send(AbstractPeer.java:51)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:171)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-11-23 09:11:11,433 [DubboServerHandler-192.168.56.1:20880-thread-11] WARN  alibaba.dubbo.remoting.exchange.codec.ExchangeCodec (ExchangeCodec.java:296) -  [DUBBO] Fail to encode response: Response [id=14, version=2.0.0, status=20, event=false, error=null, result=RpcResult [result=io.itaiit.common.pojo.TaotaoResult@33438dac, exception=null]], send bad_response info instead, cause: Serialized class io.itaiit.common.pojo.TaotaoResult must implement java.io.Serializable, dubbo version: 2.5.3, current host: 127.0.0.1
+java.lang.IllegalStateException: Serialized class io.itaiit.common.pojo.TaotaoResult must implement java.io.Serializable
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.getDefaultSerializer(SerializerFactory.java:261)
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.getSerializer(SerializerFactory.java:233)
+	at com.alibaba.com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:406)
+	at com.alibaba.dubbo.common.serialize.support.hessian.Hessian2ObjectOutput.writeObject(Hessian2ObjectOutput.java:92)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.encodeResponseData(DubboCodec.java:200)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.encodeResponse(ExchangeCodec.java:276)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.encode(ExchangeCodec.java:77)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.encode(DubboCountCodec.java:39)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalEncoder.encode(NettyCodecAdapter.java:81)
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.doEncode(OneToOneEncoder.java:66)
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.handleDownstream(OneToOneEncoder.java:59)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendDownstream(DefaultChannelPipeline.java:784)
+	at org.jboss.netty.channel.SimpleChannelHandler.writeRequested(SimpleChannelHandler.java:292)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyHandler.writeRequested(NettyHandler.java:99)
+	at org.jboss.netty.channel.SimpleChannelHandler.handleDownstream(SimpleChannelHandler.java:254)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:582)
+	at org.jboss.netty.channel.Channels.write(Channels.java:704)
+	at org.jboss.netty.channel.Channels.write(Channels.java:671)
+	at org.jboss.netty.channel.AbstractChannel.write(AbstractChannel.java:248)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyChannel.send(NettyChannel.java:98)
+	at com.alibaba.dubbo.remoting.transport.AbstractPeer.send(AbstractPeer.java:51)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:171)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-11-23 09:11:11,458 [DubboServerHandler-192.168.56.1:20880-thread-12] WARN  alibaba.dubbo.remoting.exchange.codec.ExchangeCodec (ExchangeCodec.java:296) -  [DUBBO] Fail to encode response: Response [id=15, version=2.0.0, status=20, event=false, error=null, result=RpcResult [result=io.itaiit.common.pojo.TaotaoResult@129ffd9f, exception=null]], send bad_response info instead, cause: Serialized class io.itaiit.common.pojo.TaotaoResult must implement java.io.Serializable, dubbo version: 2.5.3, current host: 127.0.0.1
+java.lang.IllegalStateException: Serialized class io.itaiit.common.pojo.TaotaoResult must implement java.io.Serializable
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.getDefaultSerializer(SerializerFactory.java:261)
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.getSerializer(SerializerFactory.java:233)
+	at com.alibaba.com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:406)
+	at com.alibaba.dubbo.common.serialize.support.hessian.Hessian2ObjectOutput.writeObject(Hessian2ObjectOutput.java:92)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.encodeResponseData(DubboCodec.java:200)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.encodeResponse(ExchangeCodec.java:276)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.encode(ExchangeCodec.java:77)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.encode(DubboCountCodec.java:39)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalEncoder.encode(NettyCodecAdapter.java:81)
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.doEncode(OneToOneEncoder.java:66)
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.handleDownstream(OneToOneEncoder.java:59)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendDownstream(DefaultChannelPipeline.java:784)
+	at org.jboss.netty.channel.SimpleChannelHandler.writeRequested(SimpleChannelHandler.java:292)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyHandler.writeRequested(NettyHandler.java:99)
+	at org.jboss.netty.channel.SimpleChannelHandler.handleDownstream(SimpleChannelHandler.java:254)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:582)
+	at org.jboss.netty.channel.Channels.write(Channels.java:704)
+	at org.jboss.netty.channel.Channels.write(Channels.java:671)
+	at org.jboss.netty.channel.AbstractChannel.write(AbstractChannel.java:248)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyChannel.send(NettyChannel.java:98)
+	at com.alibaba.dubbo.remoting.transport.AbstractPeer.send(AbstractPeer.java:51)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:171)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-11-23 09:11:11,490 [DubboServerHandler-192.168.56.1:20880-thread-13] WARN  alibaba.dubbo.remoting.exchange.codec.ExchangeCodec (ExchangeCodec.java:296) -  [DUBBO] Fail to encode response: Response [id=16, version=2.0.0, status=20, event=false, error=null, result=RpcResult [result=io.itaiit.common.pojo.TaotaoResult@22ffd537, exception=null]], send bad_response info instead, cause: Serialized class io.itaiit.common.pojo.TaotaoResult must implement java.io.Serializable, dubbo version: 2.5.3, current host: 127.0.0.1
+java.lang.IllegalStateException: Serialized class io.itaiit.common.pojo.TaotaoResult must implement java.io.Serializable
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.getDefaultSerializer(SerializerFactory.java:261)
+	at com.alibaba.com.caucho.hessian.io.SerializerFactory.getSerializer(SerializerFactory.java:233)
+	at com.alibaba.com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:406)
+	at com.alibaba.dubbo.common.serialize.support.hessian.Hessian2ObjectOutput.writeObject(Hessian2ObjectOutput.java:92)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.encodeResponseData(DubboCodec.java:200)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.encodeResponse(ExchangeCodec.java:276)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.encode(ExchangeCodec.java:77)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.encode(DubboCountCodec.java:39)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalEncoder.encode(NettyCodecAdapter.java:81)
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.doEncode(OneToOneEncoder.java:66)
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.handleDownstream(OneToOneEncoder.java:59)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendDownstream(DefaultChannelPipeline.java:784)
+	at org.jboss.netty.channel.SimpleChannelHandler.writeRequested(SimpleChannelHandler.java:292)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyHandler.writeRequested(NettyHandler.java:99)
+	at org.jboss.netty.channel.SimpleChannelHandler.handleDownstream(SimpleChannelHandler.java:254)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:582)
+	at org.jboss.netty.channel.Channels.write(Channels.java:704)
+	at org.jboss.netty.channel.Channels.write(Channels.java:671)
+	at org.jboss.netty.channel.AbstractChannel.write(AbstractChannel.java:248)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyChannel.send(NettyChannel.java:98)
+	at com.alibaba.dubbo.remoting.transport.AbstractPeer.send(AbstractPeer.java:51)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:171)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-11-23 09:11:48,090 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader (ContextLoader.java:307) - Root WebApplicationContext: initialization started
+2019-11-23 09:11:48,285 [localhost-startStop-1] INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:578) - Refreshing Root WebApplicationContext: startup date [Sat Nov 23 09:11:48 CST 2019]; root of context hierarchy
+2019-11-23 09:11:48,401 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [D:\learn\project-in-action\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-dao.xml]
+2019-11-23 09:11:49,482 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [D:\learn\project-in-action\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-service.xml]
+2019-11-23 09:11:55,088 [localhost-startStop-1] INFO  ? (?:?) - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2019-11-23 09:11:55,242 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from file [D:\learn\project-in-action\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-transaction.xml]
+2019-11-23 09:11:55,985 [localhost-startStop-1] INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from class path resource [properties/mysql-connector.properties]
+2019-11-23 09:11:56,011 [localhost-startStop-1] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor (AutowiredAnnotationBeanPostProcessor.java:153) - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-11-23 09:11:59,278 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: io.itaiit.service.TestMapperService, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:11:59,705 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service io.itaiit.service.TestMapperService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:11:59,705 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service io.itaiit.service.TestMapperService to url dubbo://192.168.56.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=60932&side=provider&timestamp=1574471519373, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:11:59,725 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:481) -  [DUBBO] Register dubbo service io.itaiit.service.TestMapperService url dubbo://192.168.56.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=60932&side=provider&timestamp=1574471519373 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager-service&dubbo=2.5.3&pid=60932&registry=zookeeper&timestamp=1574471519292, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:12:00,553 [localhost-startStop-1] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer (AbstractServer.java:69) -  [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.56.1:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:12:00,613 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:232) -  [DUBBO] Load registry store file C:\Users\22640\.dubbo\dubbo-registry-127.0.0.1.cache, data: {io.itaiit.service.TestMapperService=empty://192.168.56.1/io.itaiit.service.TestMapperService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=59192&side=consumer&timestamp=1574471077884 empty://192.168.56.1/io.itaiit.service.TestMapperService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=59192&side=consumer&timestamp=1574471077884 dubbo://192.168.56.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=60140&side=provider&timestamp=1574471267385, io.itaiit.service.ItemService=empty://192.168.56.1/io.itaiit.service.ItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=getItemList,saveItem&pid=59192&side=consumer&timestamp=1574471077696 empty://192.168.56.1/io.itaiit.service.ItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=getItemList,saveItem&pid=59192&side=consumer&timestamp=1574471077696 dubbo://192.168.56.1:20880/io.itaiit.service.ItemService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=saveItem,getItemList&pid=60140&side=provider&timestamp=1574471268173, io.itaiit.service.ItemCatService=empty://192.168.56.1/io.itaiit.service.ItemCatService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=59192&side=consumer&timestamp=1574471076924 empty://192.168.56.1/io.itaiit.service.ItemCatService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=59192&side=consumer&timestamp=1574471076924 dubbo://192.168.56.1:20880/io.itaiit.service.ItemCatService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=60140&side=provider&timestamp=1574471268285}, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:12:00,671 [ZkClient-EventThread-28-127.0.0.1:2181] INFO  org.I0Itec.zkclient.ZkEventThread (ZkEventThread.java:64) - Starting ZkClient event thread.
+2019-11-23 09:12:00,711 [localhost-startStop-1-EventThread] INFO  org.I0Itec.zkclient.ZkClient (ZkClient.java:449) - zookeeper state changed (SyncConnected)
+2019-11-23 09:12:00,715 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:302) -  [DUBBO] Register: dubbo://192.168.56.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=60932&side=provider&timestamp=1574471519373, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:12:00,767 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:325) -  [DUBBO] Subscribe: provider://192.168.56.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=60932&side=provider&timestamp=1574471519373, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:12:00,802 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:422) -  [DUBBO] Notify urls for subscribe url provider://192.168.56.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=60932&side=provider&timestamp=1574471519373, urls: [empty://192.168.56.1:20880/io.itaiit.service.TestMapperService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.TestMapperService&methods=getTime&pid=60932&side=provider&timestamp=1574471519373], dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:12:00,841 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: io.itaiit.service.ItemService, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:12:00,852 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service io.itaiit.service.ItemService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:12:00,852 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service io.itaiit.service.ItemService to url dubbo://192.168.56.1:20880/io.itaiit.service.ItemService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=getItemList,saveItem&pid=60932&side=provider&timestamp=1574471520845, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:12:00,852 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:481) -  [DUBBO] Register dubbo service io.itaiit.service.ItemService url dubbo://192.168.56.1:20880/io.itaiit.service.ItemService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=getItemList,saveItem&pid=60932&side=provider&timestamp=1574471520845 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager-service&dubbo=2.5.3&pid=60932&registry=zookeeper&timestamp=1574471520844, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:12:00,853 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:302) -  [DUBBO] Register: dubbo://192.168.56.1:20880/io.itaiit.service.ItemService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=getItemList,saveItem&pid=60932&side=provider&timestamp=1574471520845, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:12:00,896 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:325) -  [DUBBO] Subscribe: provider://192.168.56.1:20880/io.itaiit.service.ItemService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=getItemList,saveItem&pid=60932&side=provider&timestamp=1574471520845, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:12:00,973 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:422) -  [DUBBO] Notify urls for subscribe url provider://192.168.56.1:20880/io.itaiit.service.ItemService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=getItemList,saveItem&pid=60932&side=provider&timestamp=1574471520845, urls: [empty://192.168.56.1:20880/io.itaiit.service.ItemService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.ItemService&methods=getItemList,saveItem&pid=60932&side=provider&timestamp=1574471520845], dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:12:00,974 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.spring.ServiceBean (ServiceBean.java:107) -  [DUBBO] The service ready on spring started. service: io.itaiit.service.ItemCatService, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:12:00,985 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:510) -  [DUBBO] Export dubbo service io.itaiit.service.ItemCatService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:12:00,985 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:470) -  [DUBBO] Export dubbo service io.itaiit.service.ItemCatService to url dubbo://192.168.56.1:20880/io.itaiit.service.ItemCatService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=60932&side=provider&timestamp=1574471520979, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:12:00,986 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.ServiceConfig (ServiceConfig.java:481) -  [DUBBO] Register dubbo service io.itaiit.service.ItemCatService url dubbo://192.168.56.1:20880/io.itaiit.service.ItemCatService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=60932&side=provider&timestamp=1574471520979 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager-service&dubbo=2.5.3&pid=60932&registry=zookeeper&timestamp=1574471520978, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:12:00,987 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:302) -  [DUBBO] Register: dubbo://192.168.56.1:20880/io.itaiit.service.ItemCatService?anyhost=true&application=taotao-manager-service&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=60932&side=provider&timestamp=1574471520979, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:12:01,022 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:325) -  [DUBBO] Subscribe: provider://192.168.56.1:20880/io.itaiit.service.ItemCatService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=60932&side=provider&timestamp=1574471520979, dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:12:01,039 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.support.AbstractRegistry (AbstractRegistry.java:422) -  [DUBBO] Notify urls for subscribe url provider://192.168.56.1:20880/io.itaiit.service.ItemCatService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=60932&side=provider&timestamp=1574471520979, urls: [empty://192.168.56.1:20880/io.itaiit.service.ItemCatService?anyhost=true&application=taotao-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=io.itaiit.service.ItemCatService&methods=getItemCatList&pid=60932&side=provider&timestamp=1574471520979], dubbo version: 2.5.3, current host: 127.0.0.1
+2019-11-23 09:12:01,046 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader (ContextLoader.java:347) - Root WebApplicationContext: initialization completed in 12946 ms
+2019-11-23 09:12:30,092 [DubboServerHandler-192.168.56.1:20880-thread-2] INFO  com.alibaba.druid.pool.DruidDataSource (DruidDataSource.java:655) - {dataSource-1} inited
