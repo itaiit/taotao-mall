@@ -11,7 +11,7 @@
        https://www.springframework.org/schema/mvc/spring-mvc.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <context:component-scan base-package="io.itaiit.portal"/>
-    <context:property-placeholder location="classpath:resource/resource.properties"/>
+    <context:property-placeholder location="classpath:resource/*.properties"/>
 
     <mvc:annotation-driven/>
 
@@ -29,5 +29,6 @@
     <!--配置注册中心-->
     <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
     <!--引用dubbo服务，此处的id为接口名称首字母小写-->
+    <dubbo:reference interface="io.itaiit.content.service.ContentService" id="contentService" timeout="300000"/>
 
 </beans>
