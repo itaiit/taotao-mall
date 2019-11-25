@@ -38,7 +38,9 @@
     <dubbo:reference interface="io.itaiit.service.TestMapperService" id="testMapperService" timeout="300000"/>
     <dubbo:reference interface="io.itaiit.service.ItemService" id="itemService" timeout="300000"/>
     <dubbo:reference interface="io.itaiit.service.ItemCatService" id="itemCatService" timeout="300000"/>
+
     <dubbo:reference interface="io.itaiit.content.service.ContentCategoryService" id="contentCategoryService" timeout="300000"/>
+    <dubbo:reference interface="io.itaiit.content.service.ContentService" id="contentService" timeout="300000"/>
 
 
 </beans>
