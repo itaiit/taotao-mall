@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd   http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <context:component-scan base-package="io.itaiit.search"/>
+
+    <bean class="org.apache.solr.client.solrj.impl.HttpSolrClient">
+        <constructor-arg name="builder" ref="solrClientBuilder"/>
+    </bean>
+    <bean id="solrClientBuilder" class="org.apache.solr.client.solrj.impl.HttpSolrClient.Builder">
+        <constructor-arg name="baseSolrUrl" value="http://192.168.61.136:8080/solr"/>
+    </bean>
+
+    <!--配置dubbo-->
+    <dubbo:application name="taotao-search-service"/>
+    <!--配置注册中心-->
+    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+    <!--配置通信协议，端口-->
+    <dubbo:protocol name="dubbo" port="20882"/>
+    <!--暴露接口，这里是引用注解的service，不知道可行不可行-->
+    <dubbo:service interface="io.itaiit.search.service.SearchService" ref="searchServiceImpl" timeout="300000"/>
+
+</beans>
