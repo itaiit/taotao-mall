@@ -28,9 +28,12 @@ public class ItemController {
 
     @RequestMapping("/item/save")
     @ResponseBody
-    public TaotaoResult saveItem(TbItem item, String desc){
+    public TaotaoResult saveItem(TbItem item, String desc) throws Exception {
         System.out.println("item.getPrice() = " + item.getPrice());
         TaotaoResult taotaoResult = itemService.saveItem(item, desc);
+
+        // 此处添加生产者消息发送逻辑？？
+
         return taotaoResult;
     }
 }

@@ -19,10 +19,8 @@ import java.util.Map;
  */
 @Repository
 public class SearchDao {
-
     @Autowired
     private SolrClient solrClient;
-
     public SearchResult searach(SolrQuery query) throws Exception {
         SearchResult searchResult = new SearchResult();
         QueryResponse response = solrClient.query("collection1", query);

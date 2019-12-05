@@ -3,7 +3,12 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd   http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd
+       http://code.alibabatech.com/schema/dubbo
+       http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <context:component-scan base-package="io.itaiit.service"/>
 
@@ -13,7 +18,7 @@
     <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
     <!--配置通信协议，端口-->
     <dubbo:protocol name="dubbo" port="20880"/>
-    <!--暴露接口，这里是引用注解的service，不知道可行不可行-->
+    <!--暴露接口，这里是引用注解的service，-->
     <dubbo:service interface="io.itaiit.service.TestMapperService" ref="testMapperServiceImpl" timeout="300000"/>
     <dubbo:service interface="io.itaiit.service.ItemService" ref="itemServiceImpl" timeout="300000"/>
     <dubbo:service interface="io.itaiit.service.ItemCatService" ref="itemCatServiceImpl" timeout="300000"/>

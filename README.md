@@ -16,3 +16,6 @@
 
 - [x] [7. 添加solr索引]
 
+- [x] [8. 1-7的阶段总结](./trace/8.(1-7) 阶段总结.md)
+
+- [x] [9. 添加ActiveMQ自动更新Solr索引](./trace/9. 添加ActiveMQ.md)

@@ -19,7 +19,7 @@ public class PictureController {
     @Value("${TAOTAO_IMAGE_SERVER_URL}")
     private String TAOTAO_IMAGE_SERVER_URL;
 
-    @RequestMapping(value = "/pic/upload", produces = MediaType.TEXT_PLAIN_VALUE+";charset=utf-8")
+    @RequestMapping(value = "/pic/upload", produces = MediaType.TEXT_PLAIN_VALUE + ";charset=utf-8")
     @ResponseBody
     public String fileUpload(MultipartFile uploadFile) {
         try {
@@ -27,7 +27,6 @@ public class PictureController {
             String extName = oriFilename.substring(oriFilename.lastIndexOf(".") + 1);
             ClientGlobal.init("resource/client.conf");
             StorageClient storageClient = new StorageClient();
-
             /*
              * results[0]: the group name to store the file 例如：group1
              * results[1]: the new created filename 例如：M00/00/00/wKg9iF3WrgmADflgABJXt_AS408859.jpg

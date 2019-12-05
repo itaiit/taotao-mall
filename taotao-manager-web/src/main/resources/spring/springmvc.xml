@@ -35,13 +35,15 @@
     <!--配置注册中心-->
     <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
     <!--引用dubbo服务，此处的id为接口名称首字母小写-->
+    <!--后台管理服务-->
     <dubbo:reference interface="io.itaiit.service.TestMapperService" id="testMapperService" timeout="300000"/>
     <dubbo:reference interface="io.itaiit.service.ItemService" id="itemService" timeout="300000"/>
     <dubbo:reference interface="io.itaiit.service.ItemCatService" id="itemCatService" timeout="300000"/>
-
-    <dubbo:reference interface="io.itaiit.content.service.ContentCategoryService" id="contentCategoryService" timeout="300000"/>
+    <!--内容管理服务-->
+    <dubbo:reference interface="io.itaiit.content.service.ContentCategoryService" id="contentCategoryService"
+                     timeout="300000"/>
     <dubbo:reference interface="io.itaiit.content.service.ContentService" id="contentService" timeout="300000"/>
-
+    <!--solr搜索服务-->
     <dubbo:reference interface="io.itaiit.search.service.SearchService" id="searchService" timeout="300000"/>
 
 </beans>

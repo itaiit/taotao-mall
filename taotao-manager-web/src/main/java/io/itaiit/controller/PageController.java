@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class PageController {
 
     @RequestMapping("/")
-    public String showIndex(){
+    public String showIndex() {
         return "index";
     }
 
@@ -18,7 +18,7 @@ public class PageController {
      * 由于注意到请求的uri和页面名称相同，因此可以使用url模板映射
      */
     @RequestMapping("/{page}")
-    public String showPage(@PathVariable("page") String page){
+    public String showPage(@PathVariable("page") String page) {
         return page;
     }
 

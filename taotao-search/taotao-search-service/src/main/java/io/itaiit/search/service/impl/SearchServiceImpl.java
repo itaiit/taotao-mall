@@ -25,6 +25,12 @@ public class SearchServiceImpl implements SearchService {
     @Autowired
     private SearchDao searchDao;
 
+    /**
+     * 将所有商品导入索引库
+     *
+     * @return
+     * @throws Exception
+     */
     @Override
     public TaotaoResult importAllSearchItems() throws Exception {
         List<SearchItem> searchItemList = searchItemMapper.getSearchItemList();
@@ -44,6 +50,15 @@ public class SearchServiceImpl implements SearchService {
         return TaotaoResult.ok();
     }
 
+    /**
+     * 根据查询条件，执行查询，返回查询结果
+     *
+     * @param queryString
+     * @param page
+     * @param rows        每页显示的行数，在controller中写死
+     * @return
+     * @throws Exception
+     */
     @Override
     public SearchResult search(String queryString, Integer page, Integer rows) throws Exception {
         SolrQuery solrQuery = new SolrQuery();
@@ -71,7 +86,7 @@ public class SearchServiceImpl implements SearchService {
         solrQuery.addHighlightField("item_title");
         SearchResult searach = searchDao.searach(solrQuery);
         long pageCount = 0, t = 0;
-        pageCount = (long)Math.ceil(searach.getRecordCount() / (double)rows);
+        pageCount = (long) Math.ceil(searach.getRecordCount() / (double) rows);
 //        t = searach.getRecordCount() % rows;
 //        if (t != 0) {
 //            pageCount = searach.getRecordCount() / rows + 1;

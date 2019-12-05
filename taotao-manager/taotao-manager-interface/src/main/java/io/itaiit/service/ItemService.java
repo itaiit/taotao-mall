@@ -8,6 +8,6 @@ public interface ItemService {
 
     EasyUIDataGridResult getItemList(Integer page, Integer rows);
 
-    TaotaoResult saveItem(TbItem item, String desc);
+    TaotaoResult saveItem(TbItem item, String desc) throws Exception;
 
 }

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="connectionFactory" class="org.apache.activemq.pool.PooledConnectionFactory" destroy-method="stop">
+        <property name="connectionFactory">
+            <bean class="org.apache.activemq.ActiveMQConnectionFactory">
+                <property name="brokerURL" value="tcp://192.168.61.136:61616"/>
+            </bean>
+        </property>
+    </bean>
+    <!--定义目的地-->
+    <bean id="queue_destination" class="org.apache.activemq.command.ActiveMQQueue">
+        <constructor-arg name="name" value="taotao-queue"/>
+    </bean>
+
+    <!--
+    public void setExplicitQosEnabled(boolean explicitQosEnabled)
+
+    Set if the QOS values (deliveryMode, priority, timeToLive) should be used for sending a message.
+    -->
+
+    <bean class="org.springframework.jms.core.JmsTemplate">
+        <property name="connectionFactory" ref="connectionFactory"/>
+        <property name="defaultDestination" ref="queue_destination"/>
+        <property name="explicitQosEnabled" value="true"/>
+        <property name="deliveryMode" value="2"/>
+        <property name="messageConverter">
+            <bean class="org.springframework.jms.support.converter.SimpleMessageConverter"/>
+        </property>
+    </bean>
+
+</beans>
